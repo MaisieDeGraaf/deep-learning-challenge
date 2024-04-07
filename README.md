@@ -40,7 +40,7 @@ This notebook focuses on optimizing the deep learning model for predicting succe
 
 - Data preprocessing: Includes binning and encoding categorical variables (APPLICATION_TYPE, CLASSIFICATION).
 
-- Feature selection: Removes non-beneficial ID columns (EIN, STATUS, SPECIAL_CONSIDERATIONS).
+- Feature selection: Removes non-beneficial ID columns (EINS).
 
 - Model configuration: Builds a deep neural network with optimized layers and neurons.
 
@@ -48,7 +48,7 @@ This notebook focuses on optimizing the deep learning model for predicting succe
 
 ### Results:
 
-- Achieved an accuracy of approximately 78.17% on the test dataset.
+- Achieved an accuracy of approximately 78.25% on the test dataset.
 
 - Implemented binning and preprocessing techniques to improve model performance.
 
@@ -80,11 +80,11 @@ The target variable for the model is “IS_SUCCESSFUL”, which indicates whethe
 
 - Feature Variables:
 
-The features used for the model include all columns from the dataset after preprocessing excluding the target variable. This includes Name, Application Type, Affiliation, Special Considerations, Classification, Use Case, Organization, Income Amount, and Asking Amount
+The features used for the model include all columns from the dataset after preprocessing excluding the target variable. This includes Name, Application Type, Affiliation, Special Considerations, Classification, Use Case, Loan Status, Organization, Income Amount, and Asking Amount
 
 - Variables Removed:
   
-The EIN (Employer Identification Number) and Loan Status were removed from the input data as they are not relevant for predicting success.
+The EIN (Employer Identification Number) was removed from the input data as it is not relevant for predicting success.
 
 ### Compiling, Training, and Evaluating the Model
 
@@ -102,7 +102,7 @@ Model Training and Performance:
 
 - The model was trained using the Adam optimizer and binary cross-entropy loss function.
 
-- The model was trained for 100 epochs, achieving an accuracy of approximately 77.96% on the test dataset.
+- The model was trained for 100 epochs, achieving an accuracy of approximately 78.25% on the test dataset.
 
 Performance Optimization Attempts:
 
@@ -110,8 +110,8 @@ Performance Optimization Attempts:
 
 - Adjustments made to the neurons in the layers in order to achieve better results.
 
-- Removal of EIN and Status to remove noise.
+- Removal of EIN to remove noise.
 
 ### Summary
 
-In summary, the optimized deep learning model achieved an accuracy of 78.17% in predicting whether applicants would be successful in receiving funding from Alphabet Soup. Using ReLU with two hidden layers, removing noise, and binning Classification, Name, and Application Types help the model perform more efficiently. More work can be done to train the model in order to achieve a higher optimization and accuracy rate, including testing of different models, or the introduction of more data.
+In summary, the optimized deep learning model achieved an accuracy of 78.25% in predicting whether applicants would be successful in receiving funding from Alphabet Soup. Using ReLU with two hidden layers, removing noise, and binning Classification, Name, and Application Types help the model perform more efficiently. More work can be done to train the model in order to achieve a higher optimization and accuracy rate, including testing of different models, or the introduction of more data.
