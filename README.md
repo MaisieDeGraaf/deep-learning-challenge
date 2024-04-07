@@ -21,7 +21,7 @@ This notebook focuses on optimizing the deep learning model for predicting succe
 
 ### Results:
 
-- Achieved an accuracy of approximately 78.13% on the test dataset.
+- Achieved an accuracy of approximately 78.17% on the test dataset.
 
 - Implemented binning and preprocessing techniques to improve model performance.
 
